@@ -1,8 +1,8 @@
 
-# Taller "Principios sobre el análisis de conjuntos de datos de secuenciación de Oxford Nanopore" - 9-16 de octubre de 2023
-## Instructores: [Oscar A. Pérez Escobar](https://operez-escobar.wixsite.com/orchidevo) [(Royal Botanic Gardens, Kew)](https://scholar.google.co.uk/citations?user=tSzyp6QAAAAJ&hl=en) & [Sidonie Bellot](https://www.kew.org/science/our-science/people/sidonie-bellot) [(Royal Botanic Gardens, Kew)](https://scholar.google.com/citations?user=KREJ2JsAAAAJ)
+# Taller "Principios sobre el análisis de conjuntos de datos de secuenciación de Oxford Nanopore" - 11 de Noviembre de 2024
+## Instructor: [Oscar A. Pérez Escobar](https://operez-escobar.wixsite.com/orchidevo) [(Royal Botanic Gardens, Kew)](https://scholar.google.co.uk/citations?user=tSzyp6QAAAAJ&hl=en)
 ### Organizadores: [Liam Trethowan](https://www.kew.org/science/our-science/people/liam-trethowan) [(Royal Botanic Gardens, Kew)](https://scholar.google.com/citations?user=FgqqcMMAAAAJ), [Himmah Rustiami](https://scholar.google.com/citations?user=sluGEjEAAAAJ&hl=en) [(Herbarium Bogoriense-BRIN)](https://brin.go.id/en), Oscar A. Pérez Escobar, Sidonie Bellot.
-##### Este taller está financiado y apoyado por: [The Darwin Initiative UK](https://www.darwininitiative.org.uk) - [Royal Botanic Gardens, Kew (RBG Kew)](https://www.kew.org) - [Herbarium Bogoriense-BRIN)](https://brin.go.id/en)
+##### Este taller está financiado y apoyado por: [Insituto de Biologia de la Universidad Nacional Autonoma de Mexico](https://www.darwininitiative.org.uk) - [Royal Botanic Gardens, Kew (RBG Kew)](https://www.kew.org)
 
 ## 1. Introducción
 Este repositorio contiene una guía tutorial para el análisis de datos brutos derivados de Oxford Nanopore Technologies (ONT) y los pasos iniciales para realizar un ensamblaje del genoma. Además, incluye un ejemplo real de la aplicación/usabilidad de datos ONT, por ejemplo, realizar búsquedas de secuencias en una base de datos predeterminada utilizando ncbi blast para determinar la identidad de un organismo secuenciado con ONT.
