@@ -1,7 +1,7 @@
 
 # Taller "Principios sobre el análisis de conjuntos de datos de secuenciación de Oxford Nanopore" - 11 de Noviembre de 2024
 ## Instructor: [Oscar A. Pérez Escobar](https://operez-escobar.wixsite.com/orchidevo) [(Royal Botanic Gardens, Kew)](https://scholar.google.co.uk/citations?user=tSzyp6QAAAAJ&hl=en)
-### Organizadores: [Carolina Granados Mendonza](https://scholar.google.com/citations?user=yswIvBwAAAAJ&hl=es) [(Instituto de Biologia, UNAM)](https://www.ib.unam.mx/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZmZLRTZQNHRXK2tGREFHeXUxODFHdz09), [Himmah Rustiami](https://scholar.google.com/citations?user=sluGEjEAAAAJ&hl=en) [(Herbarium Bogoriense-BRIN)](https://brin.go.id/en), Oscar A. Pérez Escobar, Sidonie Bellot.
+### Organizadores: [Carolina Granados Mendonza](https://scholar.google.com/citations?user=yswIvBwAAAAJ&hl=es) [(Instituto de Biologia, UNAM)](https://www.ib.unam.mx/ib/directorio-del-personal-academico/perfil/index.php?crypt=ZmZLRTZQNHRXK2tGREFHeXUxODFHdz09), [Ulises Rosas](https://scholar.google.com/citations?user=a22UgrAAAAAJ&hl=en) [(Instituto de Biologia, UNAM)](https://www.ib.unam.mx/ib/directorio-del-personal-academico/perfil/index.php?crypt=UmRsNnd2eFFzUlBpYVBzUDFkcWVHZz09), [Lazaro Guevara](https://scholar.google.es/citations?user=G4TO4w0AAAAJ&hl=es) [(Instituto de Biologia, UNAM)](https://www.ib.unam.mx/ib/directorio-del-personal-academico/perfil/index.php?crypt=UTB0dHFEU3BGWTRMY2VqZkw5cHJ4Zz09), Oscar A. Pérez Escobar.
 ##### Este taller está financiado y apoyado por: [Insituto de Biologia de la Universidad Nacional Autonoma de Mexico](https://www.darwininitiative.org.uk) - [Royal Botanic Gardens, Kew (RBG Kew)](https://www.kew.org)
 
 ## 1. Introducción
