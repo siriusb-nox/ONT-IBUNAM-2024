@@ -26,7 +26,7 @@ Este tutorial se divide en cuatro pasos principales:
 
 A. [**Llamada de bases**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/A_basecall.md)
 
-B. [**Análisis de calidad de datos**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/B_NanoPlot.md)
+B. [**Análisis de calidad de datos**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/B_NanoPlot.md)
 
 C. [**Recorte, corrección y ensamblaje del genoma**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
 
