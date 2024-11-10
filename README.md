@@ -24,7 +24,7 @@ Este tutorial requiere los siguientes programas/dependencias (se recomienda enca
 ## 2. Estructura del taller
 Este tutorial se divide en cuatro pasos principales:
 
-A. [**Llamada de bases**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/A_basecall.md)
+A. [**Llamada de bases**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/A_basecall.md)
 
 B. [**Análisis de calidad de datos**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/B_NanoPlot.md)
 
