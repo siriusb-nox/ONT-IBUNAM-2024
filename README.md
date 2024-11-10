@@ -7,7 +7,7 @@
 ## 1. Introducción
 Este repositorio contiene una guía tutorial para el análisis de datos brutos derivados de Oxford Nanopore Technologies (ONT) y los pasos iniciales para realizar un ensamblaje del genoma. Además, incluye un ejemplo real de la aplicación/usabilidad de datos ONT, por ejemplo, realizar búsquedas de secuencias en una base de datos predeterminada utilizando ncbi blast para determinar la identidad de un organismo secuenciado con ONT.
 
-Este tutorial está dirigido a usuarios con conocimientos básicos en programación y está diseñado para ejecutarse en entornos UNIX. El participante idealmente debería tener experiencia usando shell y manipulando archivos de texto (por ejemplo, usando **awk, sed, grep, entre otros**). El taller se llevará a cabo en portátiles preconfigurados (Ubuntu 22.04). _Una introducción básica al entorno UNIX con algunos comandos útiles está disponible [aquí](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/bash_tutorial.md).
+Este tutorial está dirigido a usuarios con conocimientos básicos en programación y está diseñado para ejecutarse en entornos UNIX. El participante idealmente debería tener experiencia usando shell y manipulando archivos de texto (por ejemplo, usando **awk, sed, grep, entre otros**). El taller se llevará a cabo en portátiles preconfigurados (Ubuntu 22.04). _Una introducción básica al entorno UNIX con algunos comandos útiles está disponible [aquí](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/bash_tutorial.md)_.
 
 Este tutorial requiere los siguientes programas/dependencias (se recomienda encarecidamente tenerlos instalados antes de comenzar el tutorial). **Asegúrese de que también estén disponibles las dependencias de estos programas**:
 
