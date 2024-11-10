@@ -28,7 +28,7 @@ A. [**Llamada de bases**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/ma
 
 B. [**Análisis de calidad de datos**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/B_NanoPlot.md)
 
-C. [**Recorte, corrección y ensamblaje del genoma**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/C_read_corrtrim_CANU.md)
+C. [**Recorte, corrección y ensamblaje del genoma**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/C_read_corrtrim_CANU.md)
 
 D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/D_DataAnalysis_WGS_BLAST.md)
 
