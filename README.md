@@ -30,7 +30,7 @@ B. [**Análisis de calidad de datos**](https://github.com/siriusb-nox/ONT-IBUNAM
 
 C. [**Recorte, corrección y ensamblaje del genoma**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/C_read_corrtrim_CANU.md)
 
-D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/D_DataAnalysis_WGS_BLAST.md)
+D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/D_DataAnalysis_WGS_BLAST.md)
 
 ![Figura 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
 **Figura 1**: Vista simplificada del tutorial/pipeline
