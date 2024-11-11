@@ -115,3 +115,198 @@ Este programa proporciona información detallada sobre programas básicos de UNI
 ```bash
 man programa
 man ls
+```
+
+### ACTIVIDAD:
+
+## Ejercicios de Unix y Bioinformática
+
+### Ejercicio 1: Navegación Básica y Manipulación de Archivos
+
+**Objetivo:** Aprender a navegar por directorios, crear archivos y moverlos.
+
+**Tareas:**
+
+- Usa `pwd` para imprimir el directorio actual.
+- Usa `ls` para listar los archivos en un directorio.
+- Crea un directorio llamado `bioinformatics_intro` usando `mkdir`.
+- Navega al directorio `bioinformatics_intro` usando `cd`.
+- Crea un nuevo archivo llamado `sequences.fasta` usando el comando `touch`.
+- Mueve `sequences.fasta` a otro directorio (por ejemplo, `mv sequences.fasta /tmp/`).
+
+### Ejercicio 2: Visualización y Edición de Archivos
+
+**Objetivo:** Aprender a visualizar y editar archivos usando comandos de Unix.
+
+**Tareas:**
+
+- Usa `cat` para imprimir el contenido del archivo `sequences.fasta` en la terminal.
+- Usa `head` para mostrar las primeras 10 líneas del archivo.
+- Usa `tail` para mostrar las últimas 5 líneas del archivo.
+- Usa `nano` (o `vim`) para abrir el archivo `sequences.fasta` y agregar una nueva secuencia:
+
+Guarda y sal del editor.
+
+### Ejercicio 3: Contar el Número de Secuencias en un Archivo FASTA
+
+**Objetivo:** Aprender a manipular archivos de texto y contar elementos específicos.
+
+**Tareas:**
+
+Usa `grep` para contar el número de secuencias en un archivo FASTA buscando líneas que empiecen con `>`.
+
+**Comando:**
+
+```bash
+grep -c "^>" sequences.fasta
+```
+
+**Explicación:** `grep -c "^>"` cuenta las líneas que comienzan con `>`, que suelen ser los encabezados de las secuencias en archivos FASTA.
+
+### Ejercicio 4: Contar el Número de Nucleótidos en Cada Secuencia
+
+**Objetivo:** Aprender a procesar el contenido de un archivo FASTA para calcular la longitud de las secuencias.
+
+**Tareas:**
+
+- Usa `grep -v "^>" sequences.fasta` para imprimir solo las secuencias (sin encabezados).
+- Usa `wc -c` para contar el número de caracteres (nucleótidos) en cada secuencia:
+
+```bash
+grep -v "^>" sequences.fasta | wc -c
+```
+
+- Usa `awk` para imprimir la longitud de cada secuencia:
+
+**Comando:**
+
+```bash
+awk '/^>/ {if (seqlen) print seqlen; seqlen=0; next} {seqlen += length($0)} END {print seqlen}' sequences.fasta
+```
+
+### Ejercicio 5: Contar el Número de Especies en el Archivo FASTA
+
+**Objetivo:** Aprender a extraer nombres de especies únicas de un archivo FASTA.
+
+**Tareas:**
+
+Usa `cut` y `sort` para extraer nombres de especies únicas:
+
+**Comando:**
+
+```bash
+grep "^>" sequences.fasta | cut -d"_" -f1 | sort | uniq
+```
+
+**Explicación:** Este comando busca encabezados, corta la primera parte del encabezado (asumiendo que los nombres de especies están antes del primer `_`), los ordena y extrae las especies únicas.
+
+### Ejercicio 6: Filtrar Secuencias por Longitud
+
+**Objetivo:** Aprender a filtrar secuencias que sean más cortas o más largas que una cierta longitud.
+
+**Tareas:**
+
+Usa `awk` para filtrar secuencias menores de 50 nucleótidos:
+
+**Comando:**
+
+```bash
+awk '/^>/ {if (seqlen >= 50) print header"\n"seq; header=$0; seq=""; next} {seq=seq""$0} END {if (seqlen >= 50) print header"\n"seq}' sequences.fasta
+```
+
+**Explicación:** Este comando verifica la longitud de cada secuencia y solo imprime aquellas con 50 o más nucleótidos.
+
+### Ejercicio 7: Crear Directorios y Organizar Archivos
+
+**Objetivo:** Aprender a crear directorios y organizar archivos de manera programática.
+
+**Tareas:**
+
+Crea un directorio llamado `filtered_sequences`.
+
+Escribe un comando para mover todos los archivos FASTA al nuevo directorio:
+
+**Comandos:**
+
+```bash
+mkdir filtered_sequences
+
+mv *.fasta filtered_sequences/
+```
+
+### Ejercicio 8: Crear un Informe Resumido
+
+**Objetivo:** Aprender a generar informes resumidos con conteos y estadísticas sobre las secuencias.
+
+**Tareas:**
+
+Crea un informe resumido con:
+
+- Número de secuencias en el archivo FASTA.
+- Número de nucleótidos en cada secuencia.
+- Número de especies únicas.
+
+Guarda la salida en un archivo llamado `summary_report.txt`:
+
+**Comandos:**
+
+```bash
+echo "Número de secuencias: $(grep -c "^>" sequences.fasta)" > summary_report.txt
+
+echo "Número de especies únicas: $(grep "^>" sequences.fasta | cut -d"_" -f1 | sort | uniq | wc -l)" >> summary_report.txt
+
+grep -v "^>" sequences.fasta | awk '{print length($0)}' >> summary_report.txt
+```
+
+### Ejercicio 9: Escribir un Script para Automatizar el Conteo de Secuencias
+
+**Objetivo:** Aprender a escribir un script simple en bash para automatizar el conteo de secuencias en todos los archivos FASTA en un directorio.
+
+**Tareas:**
+
+Escribe un script bash (`count_sequences.sh`) para contar las secuencias en todos los archivos `.fasta` en el directorio actual e imprime el nombre del archivo y el conteo de secuencias para cada archivo.
+
+**Comando:**
+
+```bash
+#!/bin/bash
+
+for fasta_file in *.fasta; do
+    seq_count=$(grep -c "^>" "$fasta_file")
+    echo "$fasta_file: $seq_count sequences"
+done
+```
+
+Haz que el script sea ejecutable:
+
+**Comando:**
+
+```bash
+chmod +x count_sequences.sh
+```
+
+Ejecuta el script:
+
+**Comando:**
+
+```bash
+./count_sequences.sh
+```
+
+### Ejercicio 10: Práctica Adicional con Bucles y Condiciones
+
+**Objetivo:** Aprender más sobre bucles y condiciones.
+
+**Tareas:**
+
+Crea un bucle para verificar secuencias que faltan en algunos archivos FASTA (por ejemplo, especies que no están representadas en todos los archivos).
+
+Usa `grep` para buscar un patrón de secuencia particular en todos los archivos:
+
+**Comando:**
+
+```bash
+for fasta_file in *.fasta; do
+    grep "ATGCG" "$fasta_file" && echo "$fasta_file contiene ATGCG";
+done
+
