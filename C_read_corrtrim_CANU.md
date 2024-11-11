@@ -9,7 +9,7 @@ Existen varios programas que pueden operar con lecturas de ONT. En este taller, 
 
 En esta sección del taller, corregiremos, recortaremos y ensamblaremos un pequeño subconjunto del conjunto de datos de _Artocarpus altilis_ secuenciado a partir de una muestra recolectada en un ambiente seco (WGS17). ¡Nuestro objetivo será ensamblar el genoma del plástido de _A. altilis_!
 
->[!IMPORTANTE]
+>[!IMPORTANT]
 >Los datos necesarios para ejecutar esta sección deben estar disponibles en la carpeta `NGSdat/fastq_subset/` de tu directorio local. Estos archivos `*.fastq` contienen lecturas que coinciden con el genoma del plástido. Estos archivos están disponibles [aquí](https://drive.google.com/file/d/1om15NZPe6w4jbHM62FbrrkTNBU_3-3pc/view?usp=sharing). Asegúrate de descargarlos y almacenarlos en el directorio `NGSdat/canu_fastq` en tu máquina local (consulta el archivo `README.md` en la carpeta `canu_fastq` de este repositorio).
 
 Para ejecutar el programa en modo de corrección, utiliza:
