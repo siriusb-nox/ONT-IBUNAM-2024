@@ -117,13 +117,11 @@ man programa
 man ls
 ```
 
-### ACTIVIDAD:
-
-## Ejercicios de Unix y Bioinformática
+### ACTIVIDAD: Ejercicios de Unix y Bioinformática
 
 ### Ejercicio 1: Navegación Básica y Manipulación de Archivos
 
-**Objetivo:** Aprender a navegar por directorios, crear archivos y moverlos.
+**Objetivo:** Aprender a navegar por directorios, crear archivos y moverlos. Para estos ejercicios, usaremos un set de secuencias sinteticas disponibles en el archivo `sequences.fasta` disponible en el directorio `/home/oscarp/ONT_IBUNAM_2024/NGSdat`
 
 **Tareas:**
 
