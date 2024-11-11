@@ -35,7 +35,7 @@ D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/s
 ![Figura 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
 **Figura 1**: Vista simplificada del tutorial/pipeline
 
->[!IMPORTANTE]
+>[!IMPORTANT]
 >**Los datos base necesarios para ejecutar este tutorial están disponibles en las diferentes subcarpetas de este repositorio (por ejemplo, `NGS` y `NanoPlot`). Algunos archivos deben descargarse de una carpeta de Google Drive. El enlace a dichos archivos se proporciona en los archivos `README.md` de cada subcarpeta**.
 
 ## 2.1. Configuración del pipeline
