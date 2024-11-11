@@ -39,7 +39,13 @@ D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/s
 >**Los datos base necesarios para ejecutar este tutorial están disponibles en las diferentes subcarpetas de este repositorio (por ejemplo, `NGS` y `NanoPlot`). Algunos archivos deben descargarse de una carpeta de Google Drive. El enlace a dichos archivos se proporciona en los archivos `README.md` de cada subcarpeta**.
 
 ## 2.1. Configuración del pipeline
-En cualquier pipeline bioinformático, es esencial relacionar los programas de los que depende el pipeline y saber dónde se encuentran los archivos de entrada, etc. Para ejecutar este tutorial, debe copiar este repositorio en un directorio de su elección (idealmente `/home/ontasia*/Documents`). Para hacerlo, ejecute:
+En cualquier pipeline bioinformático, es esencial relacionar los programas de los que depende el pipeline y saber dónde se encuentran los archivos de entrada, etc. Para ejecutar este tutorial, debe cargar el ambiente (_environment_) en la sesion, usando:
+
+```bash
+conda activate ontasia
+```
+
+copiar este repositorio en un directorio de su elección (idealmente `/home/ontasia*/Documents`). Para hacerlo, ejecute:
 
 `git clone https://github.com/siriusb-nox/ONT-workshop-Oct-2023.git`
 
