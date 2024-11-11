@@ -63,7 +63,7 @@ Este software está reemplazando a `guppy`. `dorado` (disponible [aquí](https:/
 
 Un requisito de dorado es el uso de archivos de entrada **POD5** (producidos ahora por las más recientes máquinas de secuenciación y químicas, que eventualmente reemplazarán a los archivos *.fast5).
 
-**En este tutorial, trabajaremos con el archivo de texto `FAT98192_pass_deec7cb2_ec30cd82_101.pod5`. Este archivo debe descargarse desde [aquí](https://drive.google.com/file/d/1D6_Ku_bMYvB4VSqtIBr5Slg07OOZEvji/view?usp=drive_link) y debe almacenarse en tu carpeta local `NGSdat/basecall`.**
+**En este tutorial, trabajaremos con el archivo de texto `FAT98192_pass_deec7cb2_ec30cd82_101.pod5`. Este archivo esta disponible en `/home/oscarp/ONT_IBUNAM_2024/NGSdat/basecall` y debe ser copiado en su directorio local.**
 
 ```bash
 # ver lista de modelos disponibles
