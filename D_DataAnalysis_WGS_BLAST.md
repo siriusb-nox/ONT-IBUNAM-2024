@@ -60,7 +60,7 @@ cat input.fastq | paste - - - - | cut -f 1,2 | sed 's/@/>/g' | tr -s "/t" "/n" >
 ```
 
 >[!NOTE]
->**En este taller, trabajaremos con un subconjunto de lecturas fasta derivadas de nuestros datos de secuenciación del experimento de secuenciación WGS17 de _A. altilis_.** El archivo está disponible en la [carpeta NGSdat](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/NGSdat/A_altilis_CP.unitigs.fasta) de este repositorio.
+>**En este taller, trabajaremos con un subconjunto de lecturas fasta derivadas de nuestros datos de secuenciación del experimento de secuenciación WGS17 de _A. altilis_.** El archivo se llama `A_altilis_CP.unitigs.fasta` y esta disponible en la carpeta `/home/oscarp/ONT_IBUNAM_2024/NGSdat`.
 
 Intentaremos averiguar cuántos datos de lectura ONT coinciden con la búsqueda remota de NCBI contra la base de datos "nu". Aquí, es importante tener acceso a una cuenta de NCBI y una clave API. Usar una clave API permitirá un mayor número de búsquedas de secuencias por segundo en las bases de datos en línea. Para introducir tu clave API en PATH, usa:
 
