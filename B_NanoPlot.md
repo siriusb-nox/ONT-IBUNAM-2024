@@ -8,7 +8,7 @@ Primero, descomprimir el archivo:
 
 ```bash
 tar -xzvf sequencing_summary_FAT98192_deec7cb2_ec30cd82.txt.gz
-NanoPlot --summary sequencing_summary.txt --loglength --outdir summary-plots-log-transformed
+NanoPlot --summary sequencing_summary.txt --loglength --outdir output_dir summary-plots-log-transformed
 ```
 
 Como resultado, el programa creará un gran número de gráficas (archivos .png) y una compilación en formato html. Estos archivos se colocarán en una carpeta llamada "summary-plots-log-transformed" (disponible [aquí](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/NanoPlot/summary-plots-log-transformed.zip), carpeta comprimida).
