@@ -4,7 +4,10 @@ NanoPlot es un programa diseñado para producir gráficas y resúmenes de los re
 >[!IMPORTANT]
 >En este tutorial, trabajaremos con el archivo de texto `sequencing_summary_FAT98192_deec7cb2_ec30cd82.txt.gz`. Este archivo se encuentra disponible en `/home/oscarp/ONT_IBUNAM_2024/NGSdat/NanoPlot` y debe ser copiado en su directorio local.
 
+Primero, descomprimir el archivo:
+
 ```bash
+tar -xzvf sequencing_summary_FAT98192_deec7cb2_ec30cd82.txt.gz
 NanoPlot --summary sequencing_summary.txt --loglength --o summary-plots-log-transformed
 ```
 
