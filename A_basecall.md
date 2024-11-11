@@ -73,7 +73,7 @@ dorado download --list
 dorado download --model dna_r10.4.1_e8.2_400bps_hac@v4.2.0
 
 # basecall desde pod5
-dorado basecaller --emit-fastq dna_r10.4.1_e8.2_400bps_hac@v4.2.0 FAT98192_pass_deec7cb2_ec30cd82_101.pod5 > FAT98192_pass_deec7cb2_ec30cd82_101.fastq
+dorado basecaller --emit-fastq dna_r10.4.1_e8.2_400bps_hac@v4.2.0 --device cuda:0 FAT98192_pass_deec7cb2_ec30cd82_101.pod5 > FAT98192_pass_deec7cb2_ec30cd82_101.fastq
 ```
 
 Donde:
@@ -82,6 +82,7 @@ Donde:
 --emit-fastq # produce archivos *.fastq como salida
 dna_r10.4.1_e8.2_400bps_hac@v4.2.0 # indica el modelo para hacer el basecalling (este es el modelo más preciso)
 FAT98192_pass_deec7cb2_ec30cd82_101.pod5 # archivo de entrada
+--device cuda:INT # especifica que tarjeta grafica dorado debe usar (usar cuda:all) para emplear todas las tarjetas disponibles  
 ```
 
 **Nota: El comando por defecto no utiliza ningún umbral de filtrado de calidad (es decir, `--min-qscore 0`)**
