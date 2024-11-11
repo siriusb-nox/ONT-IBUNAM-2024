@@ -7,7 +7,7 @@
 ## 1. Introducción
 Este repositorio contiene una guía tutorial para el análisis de datos brutos derivados de Oxford Nanopore Technologies (ONT) y los pasos iniciales para realizar un ensamblaje del genoma. Además, incluye un ejemplo real de la aplicación/usabilidad de datos ONT, por ejemplo, realizar búsquedas de secuencias en una base de datos predeterminada utilizando ncbi blast para determinar la identidad de un organismo secuenciado con ONT.
 
-Este tutorial está dirigido a usuarios con conocimientos básicos en programación y está diseñado para ejecutarse en entornos UNIX. El participante idealmente debería tener experiencia usando shell y manipulando archivos de texto (por ejemplo, usando **awk, sed, grep, entre otros**). El taller se llevará a cabo en portátiles preconfigurados (Ubuntu 22.04). _Una introducción básica al entorno UNIX con algunos comandos útiles está disponible [aquí](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/bash_tutorial.md)_.
+Este tutorial está dirigido a usuarios con conocimientos básicos en programación y está diseñado para ejecutarse en entornos UNIX. El participante idealmente debería tener experiencia usando shell y manipulando archivos de texto (por ejemplo, usando **awk, sed, grep, entre otros**). El taller se llevará a cabo en el servidor *Beagle* del Instituto de Biologia de la UNAM. _Una introducción básica al entorno UNIX con algunos comandos útiles está disponible [aquí](https://github.com/siriusb-nox/ONT-IBUNAM-2024/blob/main/bash_tutorial.md)_.
 
 Este tutorial requiere los siguientes programas/dependencias (se recomienda encarecidamente tenerlos instalados antes de comenzar el tutorial). **Asegúrese de que también estén disponibles las dependencias de estos programas**:
 
@@ -36,7 +36,7 @@ D. [**Búsqueda y/o operaciones de anotación del genoma**](https://github.com/s
 **Figura 1**: Vista simplificada del tutorial/pipeline
 
 >[!IMPORTANT]
->**Los datos base necesarios para ejecutar este tutorial están disponibles en las diferentes subcarpetas de este repositorio (por ejemplo, `NGS` y `NanoPlot`). Algunos archivos deben descargarse de una carpeta de Google Drive. El enlace a dichos archivos se proporciona en los archivos `README.md` de cada subcarpeta**.
+>**Los datos necesarios para ejecutar este taller se encuentran en el siguiente directorio (/home/oscarp/ONT_IBUNAM_2024/). Idealmente, favor copiar esta carpeta en su directorio local**.
 
 ## 2.1. Configuración del pipeline
 En cualquier pipeline bioinformático, es esencial relacionar los programas de los que depende el pipeline y saber dónde se encuentran los archivos de entrada, etc. Para ejecutar este tutorial, debe cargar el ambiente (_environment_) en la sesion, usando:
@@ -45,30 +45,5 @@ En cualquier pipeline bioinformático, es esencial relacionar los programas de l
 conda activate ontasia
 ```
 
-copiar este repositorio en un directorio de su elección (idealmente `/home/ontasia*/Documents`). Para hacerlo, ejecute:
+**Este comando cargara todas las dependencias necesarias para ejectuar el taller**
 
-`git clone https://github.com/siriusb-nox/ONT-workshop-Oct-2023.git`
-
-**Para usuarios con programas instalados en un entorno UNIX en computadoras personales**, estos se pueden ingresar en la sesión actual (terminal) utilizando el siguiente comando, por ejemplo:
-
-`PATH=$PATH:/directorio/de/la/carpeta/programax`
-
-Para este taller en particular, los usuarios con portátiles Dell deben ejecutar las siguientes líneas para agregar las dependencias a ENV:
-
-```bash
-# Canu
-PATH=$PATH:/home/ontasia*/Softwares/canu/canu-1.9/Linux-amd64/bin/
-# Racon 
-PATH=$PATH:/home/ontasia*/softwares/genomics/racon/build/bin
-# Minimap2
-PATH=$PATH:/home/ontasia*/softwares/genomics/minimap2-2.17_x64-linux/
-# samtools
-PATH=$PATH:/home/ontasia*/softwares/genomics/samtools-1.10
-# magicblast
-PATH=$PATH:/home/ontasia*/softwares/genomics/ncbi-magicblast-1.5.0/bin/
-# ncbi blast
-PATH=$PATH:/home/ontasia*/softwares/genomics/ncbi-blast-2.10.0+/bin/
-# SMARTdenovo
-PATH=$PATH:/home/ontasia*/softwares/genomics/
-export PATH
-```
